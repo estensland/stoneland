@@ -1,0 +1,57 @@
+<html>
+	<body>
+		
+		<div class="projects_side_bar">
+			<h2><b><u><%= link_to "Projects", projects_path %></b></u></h2>
+			<h4 style="text-indent:10px;"><%= link_to "Completed", completed_path %></h4>
+			<h4 style="text-indent:10px;"><%= link_to "In Progress", in_progress_path %></h4>
+			<p class ="side_p"><%= link_to "- Boxes", boxes_path %></p>	
+			<p class ="side_p"><%= link_to "- Crosses", crosses_path %></p>	
+			<p class ="side_p"><%= link_to "- Figures", figures_path %></p>	
+			<p class ="side_p"><%= link_to "- Others", others_path %></p>
+			<p class ="side_p"><%= link_to "- Carpentry", carpentry_path %></p>	
+		</div>
+		<table class="center_table">
+ 			<thead>
+                <tr style="border-top:1px solid black; border-right:1px solid black; border-left:1px solid black">
+                	<th colspan="2" style ="padding:5px;">In Progress</th>
+                <tr style = "border-right:1px solid black; border-left:1px solid black" >
+                    <th style="padding:5px;">Category</th>
+                    <th style="padding:5px;border-left:1px solid black;">Projects</th>
+                </tr>
+            </thead>				
+			<tbody>
+            	<tr>
+					<td style="text-align:center;">Boxes</td>
+					<td>
+						<li>Simple Storage Chest</li>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">Crosses</td>
+					<td>
+						<li>Celtic Cross</li>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">Figures</td>
+					<td>
+						<li>Saint Figures</li>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">Others</td>
+					<td>
+						<li></li>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;">Carpentry</td>
+					<td>
+						<li>Desk</li>
+					</td>
+				</tr>
+			</tbody>	
+		</table>
+	</body>
+</html>

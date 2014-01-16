@@ -1,0 +1,91 @@
+<!-- ADD PAGES (LINKS SET UP) About, Complted, In Progress, Boxes, Crosses, Figures, Other, Carpentry -->
+
+<!-- Fix link font colors -->
+
+<!--  -->
+
+<html>
+	<body>
+
+		<div class="projects_side_bar">
+			<h2><b><u><%= link_to "Projects", projects_path %></b></u></h2>
+			<h4 style="text-indent:10px;"><%= link_to "Completed", completed_path %></h4>
+			<h4 style="text-indent:10px;"><%= link_to "In Progress", in_progress_path %></h4>
+			<p class ="side_p"><%= link_to "- Boxes", boxes_path %></p>	
+			<p class ="side_p"><%= link_to "- Crosses", crosses_path %></p>	
+			<p class ="side_p"><%= link_to "- Figures", figures_path %></p>	
+			<p class ="side_p"><%= link_to "- Others", others_path %></p>
+			<p class ="side_p"><%= link_to "- Carpentry", carpentry_path %></p>	
+		</div>
+		
+	
+		<table class="left_table">
+ 			<thead>
+                <tr style="border-top:1px solid black; border-right:1px solid black; border-left:1px solid black">
+                	<th colspan="3" style ="padding:5px;">All Projects </th>
+                <tr style = "border-right:1px solid black; border-left:1px solid black" >
+                    <th style="padding:5px;">Category</th>
+                    <th style="padding:5px;border-left:1px solid black;">Completed</th>
+                    <th style="padding:5px;border-left:1px solid black;">In Progress</th>
+
+                </tr>
+            </thead>				
+			<tbody>
+            	<tr>
+					<td style="text-align:center;"><%= link_to " Boxes", boxes_path %>	</td>
+					<td>
+						<li>Simple Box</li>
+						<li>Jewelery Box</li>					
+					</td>
+					<td>
+						<li>Simple Storage Chest</li>
+					</td>
+				</tr>
+
+				<tr>
+					<td style="text-align:center;"><%= link_to " Crosses", crosses_path %></td>
+					<td>
+						<li>Wheeled Cross</li>
+						<li>Lined Cross</li>
+						<li>Boxy Cross</li>
+						<li>Knot Cross</li>
+						<li>St. James Cross</li>
+					</td>
+					<td>
+						<li>Celtic Cross</li>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;"><%= link_to " Figures", figures_path %></td>
+					<td>
+						<li>Carving of Figures</li>
+					</td>
+					<td>
+						<li>Saint Figures</li>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;"><%= link_to " Others", others_path %></td>
+					<td>
+						<li>Love Spoon</li>
+						<li>Wooden Pendants</li>
+					</td>
+					<td>
+						<li></li>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;"><%= link_to " Carpentry", carpentry_path %></td>
+					<td>
+						<li>Four Slot Frame</li>
+						<li>Carved Photo Frames</li>
+					</td>
+					<td>
+						<li>Desk</li>
+					</td>
+				</tr>
+			</tbody>	
+		</table>
+
+	</body>
+</html>
